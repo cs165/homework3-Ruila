@@ -15,15 +15,22 @@ class App {
     const mainElement = document.querySelector('#main');
     this.flashcards = new FlashcardScreen(mainElement);
 
+
     const resultElement = document.querySelector('#results');
     this.results = new ResultsScreen(resultElement);
 
     // Uncomment this pair of lines to see the "flashcard" screen:
-    // this.menu.hide();
-    // this.flashcards.show();
+     //this.menu.hide();
+     //this.flashcards.show();
 
     // Uncomment this pair of lines to see the "results" screen:
     // this.menu.hide();
     // this.results.show();
+    this.startGame();
+  }
+
+  startGame () {
+
+    this.menu.createMenuItems(this.menu, this.flashcards, this.results);
   }
 }

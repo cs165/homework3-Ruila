@@ -16,6 +16,7 @@ class FlashcardScreen {
     this.containerElement.classList.remove('inactive');
     const flashcardContainer = document.querySelector('#flashcard-container');
     const card = new Flashcard(flashcardContainer, 'word', 'definition');
+    console.log("I'm here");
   }
 
   hide() {
